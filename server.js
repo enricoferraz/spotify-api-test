@@ -93,8 +93,6 @@ app.get("/recommendations", async (req, res) => {
   res.render("recommendation", { tracks: data.tracks });
 });
 
-let listener = app.listen(3000, function () {
-  console.log(
-    "Your app is listening on http://localhost:" + listener.address().port
-  );
+let listener = app.listen(process.env.PORT || 5000, function () {
+  console.log("Your app is listening on " + listener.address().port);
 });
