@@ -15,7 +15,7 @@ app.set("view engine", "pug");
 
 app.use(express.static("public"));
 
-const redirect_uri = "https://spotify-test.herokuapp.com/callback"; //"https://immense-basin-26137.herokuapp.com/callback";
+const redirect_uri = "https://spotify-test.herokuapp.com/callback";
 const client_id = process.env.APP_CLIENT_ID;
 const client_secret = process.env.APP_CLIENT_SECRET;
 // const cacheMiddleware = (req, res, next) => {
