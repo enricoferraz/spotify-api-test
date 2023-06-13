@@ -130,7 +130,6 @@ app.get("/recommendations", async (req, res) => {
 
 app.get("/addtoqueue", async (req, res) => {
   const track_uri = req.query.uri;
-  console.log(track_uri);
 
   const params = new URLSearchParams({
     uri: track_uri,
